@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-3/4 md:w-1/2 lg:w-4/12 mx-auto mt-10">
+      <div class="bg-[#003300] text-center text-4xl rounded-lg p-10">
+        <h4 class="text-white mb-5">Price <span id="price">1000</span>$</h4>
+        <div class="flex justify-center items-center gap-5 mb-5">
+          <button id="btn-apply" class="text-2xl  bg-yellow-300 hover:bg-red-600 px-4 py-2 rounded-lg text-red-500 hover:text-yellow-200 font-semibold">Apply</button>
+          <h4 class="text-yellow-200 text-4xl"><span id="percentage">30</span>% Discount</h4>
+        </div>
+        <div id="discount-output" class=" flex justify-center items-center text-[#EE82EE]">
+          <!-- <h4>Please pay :</h4>
+          <output>700$</output> -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="w-3/4 md:w-1/2 lg:w-4/12 mx-auto mt-10 ">
+        <div class="bg-[#003300] text-center text-4xl rounded-lg p-10">
+          <h4 class="text-white mb-5">Price <span id="item-price">1000</span>$</h4>
+          <div class="mb-5">
+            <div class="flex justify-center items-center gap-5 mb-5">
+              <h4 class="text-yellow-200 text-4xl">Coupon</h4>
+              <input id="coupon-percentage" class="w-1/2 px-2 text-3xl rounded-md outline-none" type="text" placeholder="DISC30">
+            </div>
+            <button id="btn-coupon-apply" class="text-2xl bg-yellow-300 hover:bg-red-600 px-4 py-2 rounded-lg text-red-500 hover:text-yellow-200 font-semibold">Apply</button>
+          </div>
+          <div id="coupon-discount-output" class=" flex justify-center items-center text-[#EE82EE]">
+            <!-- <h4>Please pay :</h4>
+            <output>700$</output> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="task1.js"></script>
+    <script src="task2.js"></script>
+  </body>
+</html>
